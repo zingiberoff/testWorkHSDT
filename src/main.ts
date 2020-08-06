@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
+import GraySection from './views/GraySection.vue'
+
 
 Vue.config.productionTip = false
-
+Vue.component('gray-section', GraySection)
 new Vue({
-  router,
-  render: h => h(App)
+    render: h => h(App)
 }).$mount('#app')
